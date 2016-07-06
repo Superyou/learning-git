@@ -9,3 +9,5 @@ git reset！！指曜井云
 $ git reset --hard 3628164        $ git reset --hard HEAD^^
 git reflog
 git clone
+git remote -v add git@
+git push A(origin) B(branch master)
