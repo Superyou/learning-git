@@ -10,4 +10,9 @@ $ git reset --hard 3628164        $ git reset --hard HEAD^^
 git reflog
 git clone
 git remote -v add git@
+
+Have to creat the new ssh key on the Github:
+$ ssh-keygen -t rsa -C "youremail@example.com"
+id_rsaºÍid_rsa.pub
+
 git push A(origin) B(branch master)
