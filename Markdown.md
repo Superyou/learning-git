@@ -36,13 +36,14 @@ and it must be indented by at least one space.
 >
 >   By "vigorous," we mean a strictly vertical motion. Julia Child once quipped:
 >   \> Up and down and all around, that's how butter on salmon goes.
+>
 >4. Drop the salmon into the egg-milk bowl.
 >
 >   Here are some techniques on salmon-dropping:
 >
->   \* Make sure no trout or children are present
->   \* Use both hands
->   \* Always have a towel nearby in case of messes
+>   \* Make sure no trout or children are present  
+>   \* Use both hands  
+>   \* Always have a towel nearby in case of messes  
 
 
 ### blockquotes
@@ -77,6 +78,7 @@ To doubt they were kneeling then.
 
 ### Codes
 Adding 4 spaces or a tab before a paragraph.
+
   void main()
   {
     printf("Hello, Markdown.");
