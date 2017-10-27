@@ -10,10 +10,12 @@
 * Computation — new calculating strategy to reduce complexity 
 
 * Storage 
+
  1. feature maps 
 
    Conv - Pooling - Relu — SNAPEA, decoding strategy based on RELU property 
- 2) weight matrix 
+   
+ 2. weight matrix 
   
    CirCNN , Clustering & quantization 
 
