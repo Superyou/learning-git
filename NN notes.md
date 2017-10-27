@@ -20,3 +20,10 @@
    CirCNN , Clustering & quantization 
 
 
+---
+## Questions
+
+1. What does ***"fine-grained"*** and ***"Coarse-grained"*** really means?  
+
+2. What does **off-chip** bandwide and **on-chip** bandwide refer to ?  
+
