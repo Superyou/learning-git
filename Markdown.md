@@ -79,8 +79,8 @@ To doubt they were kneeling then.
 ### Codes
 Adding 4 spaces or a tab before a paragraph.
 
-  void main()  
-  {  
-    printf("Hello, Markdown.");  
-  }  
+    void main()  
+    {  
+        printf("Hello, Markdown.");  
+    }  
 
