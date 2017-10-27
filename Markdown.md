@@ -34,7 +34,7 @@ and it must be indented by at least one space.
 >
 >3. Rub the salmon vigorously with butter.
 >
->   By "vigorous," we mean a strictly vertical motion. Julia Child once quipped:
+>   By "vigorous," we mean a strictly vertical motion. Julia Child once quipped:  
 >   \> Up and down and all around, that's how butter on salmon goes.
 >
 >4. Drop the salmon into the egg-milk bowl.
@@ -79,7 +79,8 @@ To doubt they were kneeling then.
 ### Codes
 Adding 4 spaces or a tab before a paragraph.
 
-  void main()
-  {
-    printf("Hello, Markdown.");
-  }
+  void main()  
+  {  
+    printf("Hello, Markdown.");  
+  }  
+
