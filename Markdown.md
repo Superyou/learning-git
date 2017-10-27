@@ -35,14 +35,14 @@ and it must be indented by at least one space.
 >3. Rub the salmon vigorously with butter.
 >
 >   By "vigorous," we mean a strictly vertical motion. Julia Child once quipped:
->   > Up and down and all around, that's how butter on salmon goes.
+>   \> Up and down and all around, that's how butter on salmon goes.
 >4. Drop the salmon into the egg-milk bowl.
 >
 >   Here are some techniques on salmon-dropping:
 >
->   * Make sure no trout or children are present
->   * Use both hands
->   * Always have a towel nearby in case of messes
+>   \* Make sure no trout or children are present
+>   \* Use both hands
+>   \* Always have a towel nearby in case of messes
 
 
 ### blockquotes
@@ -53,7 +53,7 @@ and it must be indented by at least one space.
 ### Links
 Two methods:
 1. [Search google](www.google.com)
-2. [search google](GOOGLE WEB)
+2. [search google][GOOGLE WEB]  
 
 [GOOGLE WEB]:www.google.com
 
@@ -61,10 +61,11 @@ Two methods:
 Similar to add Links, just add a **!** before the blocks **[** and **]**
 Also two methods:
 1. ![this is a figure](some links)
-2. ![this is a figure](CITE)
+2. ![this is a figure][CITE]  
+
 [CITE]: http://somelinks
 
-###Paragraphs
+### Paragraphs
 
 Split sentences by adding double spaces.  
 Using soft breaks instead of hard breaks.
@@ -73,3 +74,10 @@ We pictured the meek mild creatures where
 They dwelt in their strawy pen,  
 Nor did it occur to one of us there  
 To doubt they were kneeling then.
+
+### Codes
+Adding 4 spaces or a tab before a paragraph.
+  void main()
+  {
+    printf("Hello, Markdown.");
+  }
