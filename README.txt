@@ -1,11 +1,12 @@
 Useful Git Commends
-git init¡ª¡ªÍ¨¹ıgit initÃüÁî°ÑÕâ¸öÄ¿Â¼±ä³ÉGit¿ÉÒÔ¹ÜÀíµÄ²Ö¿â
-git status¡ª¡ªgit statusÃüÁî¿ÉÒÔÈÃÎÒÃÇÊ±¿ÌÕÆÎÕ²Ö¿âµ±Ç°µÄ×´Ì¬
-git add¡ª¡ªÓÃÃüÁîgit add¸æËßGit£¬°ÑÎÄ¼şÌí¼Óµ½²Ö¿â
-git commit -m ¡ª¡ªÓÃÃüÁîgit commit¸æËßGit£¬°ÑÎÄ¼şÌá½»µ½²Ö¿â
+git initâ€”â€”é€šè¿‡git initå‘½ä»¤æŠŠè¿™ä¸ªç›®å½•å˜æˆGitå¯ä»¥ç®¡ç†çš„ä»“åº“
+git statusâ€”â€”git statuså‘½ä»¤å¯ä»¥è®©æˆ‘ä»¬æ—¶åˆ»æŒæ¡ä»“åº“å½“å‰çš„çŠ¶æ€
+git addâ€”â€”ç”¨å‘½ä»¤git addå‘Šè¯‰Gitï¼ŒæŠŠæ–‡ä»¶æ·»åŠ åˆ°ä»“åº“
+git remove -r -f â€”â€” ä»æœ¬åœ°å’Œç‰ˆæœ¬åº“ä¸­çš„æ–‡ä»¶åˆ é™¤
+git commit -m â€”â€”ç”¨å‘½ä»¤git commitå‘Šè¯‰Gitï¼ŒæŠŠæ–‡ä»¶æäº¤åˆ°ä»“åº“
 git diff
 git log
-git reset¡ª¡ª»ØÍË°æ±¾
+git resetâ€”â€”å›é€€ç‰ˆæœ¬
 $ git reset --hard 3628164        $ git reset --hard HEAD^^
 git reflog
 git clone
@@ -13,6 +14,6 @@ git remote -v add git@
 
 Have to creat the new ssh key on the Github:
 $ ssh-keygen -t rsa -C "youremail@example.com"
-id_rsaºÍid_rsa.pub
+id_rsaå’Œid_rsa.pub
 
 git push A(origin) B(branch master)
