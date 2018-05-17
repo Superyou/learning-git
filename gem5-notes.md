@@ -26,12 +26,30 @@ from BaseO3CPU, use tick to simulate, has *fetch*, *decode*, *rename*, *IEW*, *c
     - isSnooping()
 * tick --- ***main code***
     simply tick every stage
-    - fetch.tick()
-    - decode.tick()
-    - rename.tick()
-    - IEW.tick()
-    - commit.tick()
+    - fetch.tick() ( /src/cpu/o3/fetch_impl.hh )
+    - decode.tick() ( /src/cpu/o3/decode_impl.hh )
+    - rename.tick() ( /src/cpu/o3/rename_impl.hh )
+    - IEW.tick() ( /src/cpu/o3/iew_impl.hh )
+    - commit.tick() ( /src/cpu/o3/commit_impl.hh )
+    
+   
+**IEW** ( /src/cpu/o3/iew_impl.hh )
 
+stage for issue, execute and writeback 
+
+* dispatch()
+* executeInsts() --- ***focus***
+    
+    - instQueue.getInstToExecute()  ( inst_queue_impl.hh )
+    
+    We have a instruction queue (instQueue), which stores all the dispatched instructions 
+    - fault = ldstQueue.executeLoad(inst) （lsq_impl.hh）
+    
+    If it is load, we need to read from memory system
+        - calls the executeLoad function of a lsq_unit (lsq_unit_impl.hh)
+            - load_fault = inst->initiateAcc() --- inst is a impl::DyInstPtr class, where impl = O3CPUImpl  
+    - fault = ldstQueue.executeStore(inst);
+* writebackInsts()
 
 
 
