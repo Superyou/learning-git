@@ -40,7 +40,7 @@ stage for issue, execute and writeback
 * dispatch()
 * executeInsts() --- ***focus***
     - instQueue.getInstToExecute()  ( inst_queue_impl.hh ) We have a instruction queue (instQueue), which stores all the dispatched instructions 
-    - fault = ldstQueue.executeLoad(inst) （lsq_impl.hh） If it is load, we need to read from memory system
+    - fault = ldstQueue.executeLoad(inst) （lsq_impl.hh） If it is load, we need to read from memory system
         - calls the executeLoad function of a lsq_unit (lsq_unit_impl.hh)
             - load_fault = inst->initiateAcc() --- inst is a impl::DyInstPtr class, where impl = O3CPUImpl  
     - fault = ldstQueue.executeStore(inst);
