@@ -39,8 +39,7 @@ stage for issue, execute and writeback
 
 * dispatch()
 * executeInsts() --- ***focus***
-    
-    - instQueue.getInstToExecute()  ( inst_queue_impl.hh )
+    - instQueue.getInstToExecute()  ( inst_queue_impl.hh )
     
         We have a instruction queue (instQueue), which stores all the dispatched instructions 
     - fault = ldstQueue.executeLoad(inst) （lsq_impl.hh）
