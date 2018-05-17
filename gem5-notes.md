@@ -10,7 +10,8 @@ Focus on O3 CPU
     from FullO3CPU <*O3CPUImpl*>
 
 **FullO3CPU** ( /src/cpu/o3/cpu.hh ) 
-    from BaseO3CPU, use tick to simulate, has *fetch*, *decode*, *rename*, *IEW*, *commit* stages inside it 
+
+from BaseO3CPU, use tick to simulate, has *fetch*, *decode*, *rename*, *IEW*, *commit* stages inside it 
     
 * IcachePort --- TBD
     - recvTimingResp(PacketPtr pkt)
@@ -23,7 +24,16 @@ Focus on O3 CPU
     - recvFunctionalSnoop(PacketPtr pkt)
     - recvReqRetry()
     - isSnooping()
-    
+* tick --- ***main code***
+    simply tick every stage
+    - fetch.tick()
+    - decode.tick()
+    - rename.tick()
+    - IEW.tick()
+    - commit.tick()
+
+
+
 
 **O3CPUImpl** ( /src/cpu/o3/impl.hh ) 
 
