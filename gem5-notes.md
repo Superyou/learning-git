@@ -45,11 +45,17 @@ stage for issue, execute and writeback
             - load_fault = inst->initiateAcc() --- inst is a impl::DyInstPtr class, where impl = O3CPUImpl  
     - fault = ldstQueue.executeStore(inst);
     
-* writebackInsts()
+* writebackInsts() --- TBD
 
 
 
 **O3CPUImpl** ( /src/cpu/o3/impl.hh ) 
+
+* RefCountingPtr < DynInst > DyInstPtr (refcnt.hh)
+* BaseO3DynInst< O3CPUImpl > DynInst ()
+    - from BaseDynInst 
+        - initiateMemRead(Addr,size, Request::Flags) 
+            - **Here it calls the read function of the LSQUnit** fault = cpu->read(req, sreqLow, sreqHigh, lqIdx);
 
 
 
